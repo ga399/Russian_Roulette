@@ -19,10 +19,10 @@ namespace RussianRouletteAssignment.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace RussianRouletteAssignment.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RussianRouletteAssignment.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace RussianRouletteAssignment.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RussianRouletteAssignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aimAway {
+        public static System.Drawing.Bitmap aimAway {
             get {
                 object obj = ResourceManager.GetObject("aimAway", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -71,9 +71,36 @@ namespace RussianRouletteAssignment.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream AmmoCasing {
+            get {
+                return ResourceManager.GetStream("AmmoCasing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream BulletPass {
+            get {
+                return ResourceManager.GetStream("BulletPass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream ChamberSpin {
+            get {
+                return ResourceManager.GetStream("ChamberSpin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap deathImage {
+        public static System.Drawing.Bitmap deathImage {
             get {
                 object obj = ResourceManager.GetObject("deathImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -81,9 +108,18 @@ namespace RussianRouletteAssignment.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream dryFire {
+            get {
+                return ResourceManager.GetStream("dryFire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap greyBackground {
+        public static System.Drawing.Bitmap greyBackground {
             get {
                 object obj = ResourceManager.GetObject("greyBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -91,9 +127,18 @@ namespace RussianRouletteAssignment.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream myNameIsBond {
+            get {
+                return ResourceManager.GetStream("myNameIsBond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap noMoreAimAway {
+        public static System.Drawing.Bitmap noMoreAimAway {
             get {
                 object obj = ResourceManager.GetObject("noMoreAimAway", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +148,7 @@ namespace RussianRouletteAssignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap noMoreAimAway1 {
+        public static System.Drawing.Bitmap noMoreAimAway1 {
             get {
                 object obj = ResourceManager.GetObject("noMoreAimAway1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +158,7 @@ namespace RussianRouletteAssignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap noMoreAimAway2 {
+        public static System.Drawing.Bitmap noMoreAimAway2 {
             get {
                 object obj = ResourceManager.GetObject("noMoreAimAway2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +168,7 @@ namespace RussianRouletteAssignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pokerFace {
+        public static System.Drawing.Bitmap pokerFace {
             get {
                 object obj = ResourceManager.GetObject("pokerFace", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,10 +178,19 @@ namespace RussianRouletteAssignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pokerFace2 {
+        public static System.Drawing.Bitmap pokerFace2 {
             get {
                 object obj = ResourceManager.GetObject("pokerFace2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream RevolverShot {
+            get {
+                return ResourceManager.GetStream("RevolverShot", resourceCulture);
             }
         }
     }

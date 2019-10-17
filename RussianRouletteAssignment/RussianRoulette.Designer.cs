@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame));
             this.btnBulletLoad = new System.Windows.Forms.Button();
             this.btnChamberSpin = new System.Windows.Forms.Button();
             this.btnNextRound = new System.Windows.Forms.Button();
@@ -52,11 +51,8 @@
             this.pbAimAway = new System.Windows.Forms.PictureBox();
             this.btnHelp = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnMusic = new System.Windows.Forms.Button();
-            this.WMPBackgroundSong = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.pbAimHead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAimAway)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WMPBackgroundSong)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBulletLoad
@@ -329,28 +325,6 @@
             this.label4.TabIndex = 22;
             this.label4.Text = "Aim away";
             // 
-            // btnMusic
-            // 
-            this.btnMusic.BackColor = System.Drawing.Color.Silver;
-            this.btnMusic.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.btnMusic.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMusic.Location = new System.Drawing.Point(415, 0);
-            this.btnMusic.Name = "btnMusic";
-            this.btnMusic.Size = new System.Drawing.Size(23, 23);
-            this.btnMusic.TabIndex = 24;
-            this.btnMusic.Text = "?";
-            this.btnMusic.UseVisualStyleBackColor = false;
-            this.btnMusic.Click += new System.EventHandler(this.btnMusic_Click);
-            // 
-            // WMPBackgroundSong
-            // 
-            this.WMPBackgroundSong.Enabled = true;
-            this.WMPBackgroundSong.Location = new System.Drawing.Point(437, 0);
-            this.WMPBackgroundSong.Name = "WMPBackgroundSong";
-            this.WMPBackgroundSong.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMPBackgroundSong.OcxState")));
-            this.WMPBackgroundSong.Size = new System.Drawing.Size(36, 34);
-            this.WMPBackgroundSong.TabIndex = 25;
-            // 
             // frmGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,8 +332,6 @@
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(473, 450);
-            this.Controls.Add(this.WMPBackgroundSong);
-            this.Controls.Add(this.btnMusic);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.pbAimAway);
@@ -386,7 +358,6 @@
             this.Load += new System.EventHandler(this.RussianRoulette_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAimHead)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAimAway)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WMPBackgroundSong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,7 +388,5 @@
         private System.Windows.Forms.PictureBox pbAimAway;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnMusic;
-        private AxWMPLib.AxWindowsMediaPlayer WMPBackgroundSong;
     }
 }

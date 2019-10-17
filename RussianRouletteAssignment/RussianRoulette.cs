@@ -26,8 +26,8 @@ namespace RussianRouletteAssignment
         //saying hello to the user when they load the game form
         {
             lblHello.Text = "Hello " + frmMenu.userName + "!" + "\nAre you ready for some Russian Roulette?";
-
-            WMPBackgroundSong.URL = System.AppDomain.CurrentDomain.BaseDirectory + "myNameIsBond.WAV";
+            SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.myNameIsBond);
+            audio.Play();
         }
 
         private void btnBulletLoad_Click(object sender, EventArgs e)
@@ -39,18 +39,20 @@ namespace RussianRouletteAssignment
             btnChamberSpin.Enabled = true;
             lblScore.Text = "Your score: " + obj_game.score;
             lblAimAwayChances.Text = "Aim away chances left: " + obj_game.aimAwayChances;
-            SoundPlayer loadBullet = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "AmmoCasing.WAV");
-            // plays the sound on button click
-            loadBullet.Play();
+            //code to play sound on button click 
+            SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.AmmoCasing);
+            audio.Play();
+
         }
 
         private void btnChamberSpin_Click(object sender, EventArgs e)
         {
             pbAimHead.Enabled = true;
             pbAimAway.Enabled = true;
-            SoundPlayer chamberSpin = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "ChamberSpin.WAV");
-            // plays the sound on button click
-            chamberSpin.Play();
+            //code to play sound on button click
+            SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.ChamberSpin);
+            audio.Play();
+
         }
 
         private void pbAimHead_Click(object sender, EventArgs e)
@@ -69,9 +71,9 @@ namespace RussianRouletteAssignment
                     lblShotOrNot.Text = "You were shot! Game over!";
                     btnNextRound.Enabled = false;
                     btnSaveHighScore.Enabled = true;
-                    SoundPlayer gunShot = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "RevolverShot.WAV");
-                    // plays the sound on button click
-                    gunShot.Play();
+                    //code to play sound on button click
+                    SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.RevolverShot);
+                    audio.Play();
                     obj_game.bulletcount = 6;
                     pbAimHead.Image = Properties.Resources.deathImage;
                 }
@@ -84,9 +86,10 @@ namespace RussianRouletteAssignment
                     lblShotOrNot.Text = "You survive this one!";
                     obj_game.score = obj_game.score + 100;
                     lblScore.Text = "Your score: " + obj_game.score;
-                    SoundPlayer blankShot = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "dryFire.WAV");
-                    // plays the sound on button click
-                    blankShot.Play();
+                    //code to play sound on button click
+                    SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.dryFire);
+                    audio.Play();
+
                 }
             }
             else if (obj_game.bulletsLeft <= 1)
@@ -99,8 +102,9 @@ namespace RussianRouletteAssignment
                 lblShotOrNot.Text = "You were shot! Game over!";
                 btnNextRound.Enabled = false;
                 btnSaveHighScore.Enabled = true;
-                SoundPlayer gunShot = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "RevolverShot.WAV");
-                gunShot.Play();
+                //code to play sound on button click
+                SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.RevolverShot);
+                audio.Play();
                 pbAimHead.Image = Properties.Resources.deathImage;
             }
         }
@@ -184,9 +188,10 @@ namespace RussianRouletteAssignment
                 pbAimAway.Image = Properties.Resources.noMoreAimAway2;
                 obj_game.bulletsLeft = obj_game.bulletsLeft - 1;
                 lblBulletsLeft.Text = "Shots left: " + obj_game.bulletsLeft;
-                SoundPlayer blankShot = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "dryFire.WAV");
-                // plays the sound on button click
-                blankShot.Play();
+                //code to play sound on button click
+                SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.dryFire);
+                audio.Play();
+
             }
 
             else if (obj_game.bulletLoad != obj_game.bulletcount) //checks if you fire a blank away from you
@@ -195,9 +200,9 @@ namespace RussianRouletteAssignment
                 lblAimAwayChances.Text = "Aim away chances left: " + obj_game.aimAwayChances;
                 lblShotOrNot.Text = "Well that was a waste";
                 obj_game.bulletcount = obj_game.bulletcount + 1;
-                SoundPlayer blankShot = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "dryFire.WAV");
-                // plays the sound on button click
-                blankShot.Play();
+                //code to play sound on button click
+                SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.dryFire);
+                audio.Play();
                 obj_game.bulletsLeft = obj_game.bulletsLeft - 1;
                 lblBulletsLeft.Text = "Shots left: " + obj_game.bulletsLeft;
 
@@ -216,9 +221,9 @@ namespace RussianRouletteAssignment
                 lblShotOrNot.Text = "You win this round!";
                 lblScore.Text = "Your score: " + obj_game.score;
                 obj_game.bulletcount = obj_game.bulletcount + 1;
-                SoundPlayer bulletPass = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "BulletPass.WAV");
-                // plays the sound on button click
-                bulletPass.Play();
+                //code to play sound on button click
+                SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.BulletPass);
+                audio.Play();
                 obj_game.bulletsLeft = obj_game.bulletsLeft - 1;
                 lblBulletsLeft.Text = "Shots left: " + obj_game.bulletsLeft;
             }
@@ -235,9 +240,9 @@ namespace RussianRouletteAssignment
                 lblShotOrNot.Text = "You win this round!";
                 lblScore.Text = "Your score: " + obj_game.score;
                 obj_game.bulletcount = obj_game.bulletcount + 1;
-                SoundPlayer bulletPass = new SoundPlayer(System.AppDomain.CurrentDomain.BaseDirectory + "BulletPass.WAV");
-                // plays the sound on button click
-                bulletPass.Play();
+                //code to play sound on button click
+                SoundPlayer audio = new SoundPlayer(RussianRouletteAssignment.Properties.Resources.BulletPass);
+                audio.Play();
                 obj_game.bulletsLeft = 0;
                 lblBulletsLeft.Text = "Shots left: " + obj_game.bulletsLeft;
             }
@@ -249,9 +254,6 @@ namespace RussianRouletteAssignment
             MessageBox.Show(help);
         }
 
-        private void btnMusic_Click(object sender, EventArgs e)// playing song in  background
-        {
-            MessageBox.Show("Song: My name is bond, By Martijn DeBoer (NiGiD)");
-        }
+
     }
 }
